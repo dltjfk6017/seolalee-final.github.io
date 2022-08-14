@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="description" content="Building a responsive navigation with the BitDev">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Responsive multipage</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<wrapper>
+
+    <!--Text endless promotion-->
+        <div class="promotion">
+            <div class="marquee">
+              <p>
+                Subscribe and get free shipping + 10% off Free shipping on orders over $50 Subscribe and get free shipping + 10% off Free shipping on orders over $50 Subscribe and get free shipping + 10% off Free shipping on orders over $50 Subscribe and get free shipping + 10% off Free shipping on orders over $50 
+              </p>
+              <p>
+                Subscribe and get free shipping + 10% off Free shipping on orders over $50 Subscribe and get free shipping + 10% off Free shipping on orders over $50 Subscribe and get free shipping + 10% off Free shipping on orders over $50 Subscribe and get free shipping + 10% off Free shipping on orders over $50
+              </p>
+            </div>
+          </div>
+
+    <!-- Logo -->
+
+    <div class="logo">
+    <a href="index.html">
+        <img alt=logo src="img/logo.png">
+    </a>
+    </div>
+    
+    <!--Hamburger menu-->
+
+    <nav class="navbar">
+        <span class="open-slide">
+            <a href="#" onclick="openSideMenu()">
+                <svg width="30" height="30">
+                    <path d="M0,5 30,5" stroke="#000" stroke-width="5"/>
+                    <path d="M0,14 30,14" stroke="#000" stroke-width="5"/>
+                    <path d="M0,23 30,23" stroke="#000" stroke-width="5"/>
+                </svg>
+            </a>
+            </span>
+        </nav>
+
+    <!--Navigation bar menu-->
+
+    <nav id="navbar-nav">
+        <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="tacos.html">TACOS</a></li>
+        <li><a href="drinks.html">DRINKS</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+    </nav>
+
+    <!--Slide menu-->
+    
+    <div id="side-menu" class="side-nav">
+        <a href="#" class="btn-close" onclick="closeSideMenu()">&times;</a>
+        <a href="#">HOME</a>
+        <a href="#">ABOUT</a>
+        <a href="#">TACOS</a>
+        <a href="#">DRINKS</a>
+        <a href="#">CONTACT</a>
+    </div>
+
+    <!--Item-->
+
+    <h1 class="tacos">TACOS</h1>
+
+    <div class="tacogallery">
+
+    <div class="galleryimage">
+        <img src="img/ta1.jpg" alt="taco 1" width="450" height="350">
+        <div class="imagetitle">7-LAYER BURRITO CHIKEN BEAN</div>
+        <p class="imageinfo">A warm, soft flour tortilla wrapped around seasoned rice,<br> hearty beans and a blend of three cheeses - cheddar, <br> cheddar, Monterey Jack and part skim mozzarella.</p>
+    </div>
+
+    <div class="galleryimage">
+        <img src="img/tta2.jpg" alt="taco 2" width="450" height="350">
+        <div class="imagetitle">BEAN NACHOS SUPREME</div>
+        <p class="imageinfo">Always hurrying to the main course? Nacho fast. <br>Try our crisp, freshly prepared nacho chips,<br> layered with refried beans, zesty nacho cheese sauce.</p>
+    </div>
+
+    <div class="galleryimage">
+        <img src="img/ta3.jpg" alt="taco 3" width="450" height="350">
+        <div class="imagetitle">GRANDE NACHOS DUO</div>
+        <p class="imageinfo">Share in that Grande Nacho experience and  <br>ake it a meal for 2! Includes <br> 2 Grande Nachos and 2 20oz drinks.</p>
+    </div>
+
+    <div class="galleryimage">
+        <img src="img/ta4.jpg" alt="taco 4" width="450" height="350">
+        <div class="imagetitle">BEEF SUPREME</div>
+        <p class="imageinfo">A perfect choice – any day, any time.<br> A crunchy corn taco shell filled with <br> seasoned ground beef, reduced-fat sour cream.</p>
+    </div>
+
+</div>
+
+
+     <!--Footer-->
+    <p class="footer">© 2022 Best Taco Club </p>
+
+
+    <script>
+    
+                //opens the side menu
+                function openSideMenu(){
+                    document.getElementById('side-menu').style.width = '250px';
+                    document.getElementById('main').style.marginLeft = '250px';
+                }
+                //closes the side menu
+                 function closeSideMenu(){
+                    document.getElementById('side-menu').style.width = '0px';
+                    document.getElementById('main').style.marginLeft = '0px';
+                }
+
+
+    
+        
+        </script>
+
+
+        </body>
+        </html>
