@@ -1,0 +1,580 @@
+
+@font-face {
+    font-family: 'Hobeaux';
+    src: url('Hobeaux.off');
+}
+
+.wrapper {
+    margin: 0 auto;
+}
+
+.promotion {
+    max-width: 100%;
+    overflow: hidden;
+    background-color: #EBFF08;
+    height: 40px;
+    margin: 0 auto;
+  }
+  
+  .marquee {
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    animation: marquee 30s linear infinite;
+
+  }
+  
+  .marquee p {
+    display: inline-block;
+    margin: 0 auto;
+    padding-top: 10px;
+    font-family: 'nunito';
+    font-weight: 600;
+    
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      transform: translate3d(-50%, 0, 0);
+    }
+  }
+
+/** logo **/
+
+.logo { 
+    text-align: center;
+    margin-top: -2%;
+}
+
+/** nav bar**/
+
+li {font-family:"hobeaux", sans-serif;
+    font-weight: 500;
+    font-size:16px; 
+    color:black;
+    text-decoration: none;}
+
+
+/** hamburger menu **/
+
+.navbar {
+    margin-top: -12%;
+    padding: 20px 20px;
+}
+
+#navbar-nav {
+    text-align: center;
+    overflow: hidden;
+    margin-top: 60px;
+
+}
+
+/** nav bar menu **/
+
+ul li {
+    display:inline-block;
+    list-style: none;
+}
+
+ul li a {
+    color:black;
+    text-align: center;
+    text-decoration: none;
+    padding:0px 60px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+a:hover {
+    color:#e27134;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+}
+
+/** Slide menu **/
+
+.side-nav {
+    font-size: 40px;
+    font-weight: 600;
+    font-family: 'Hobeaux';
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #EBFF08;
+    opacity: 100;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.8s;
+    transition-timing-function: ease-in-out;
+}
+
+.side-nav a {
+    padding: 10px 10px 10px 30px;
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+
+.side-nav a:hover {
+    color: white;
+}
+
+.side-nav .btn-close {
+    position: absolute;
+    top: 0;
+    right: 22px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+/** hero content **/
+
+.container1 {
+    margin: 0 auto;
+    align-items: center;
+
+}
+.hero_content {
+    width: 100%;
+   text-align: center;   
+
+}
+
+.hero_content img {
+    width: 1410px;
+    height: 720px;
+    margin-top: 10px;
+    position:relative;
+
+
+}
+
+/** hero text **/
+
+.hero_content_text {
+    float: left;
+    margin-top: -380px;
+    padding-left: 120px;
+    position:absolute;
+
+
+
+}
+
+
+.hero_content_text h1 {
+    color: #e9ff00;
+    font-size: 56px;
+    font-weight: 600;
+    font-family: 'Hobeaux';
+    
+}
+
+.hero_content_text h1:hover {
+    color: black;
+}
+
+/** hero (order now) button **/
+
+.hero_content_btn {
+    margin-top: -20px;
+    
+}
+
+.hero_content_btn button {
+    font-family: 'nunito';
+    font-size: 22px;
+    background-color: #FFFFFF;
+    border:3px solid black;
+    border-radius: 5px;
+    padding: 9px 24px;
+    color:black;
+    position: center;
+    cursor: pointer;
+   font-weight: bold;
+}
+
+.hero_content_btn button:hover {
+    color:#20411D;
+   font-weight: bold;
+}
+
+/** why best taco club discription **/
+
+h2 {
+    font-family: 'Hobeaux';
+    font-size: 40px;
+    font-weight: bold;
+    padding-top: 36px;
+}
+
+h2:hover {
+    color: pink;
+}
+
+.container2 {
+    background-color: #cc83ff;
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+    padding-top: 15px;
+    text-align: center;
+
+}
+
+.container2 p {
+    font-family: 'Hobeaux';
+    font-size: 20px;
+    
+}
+
+/** About  content **/
+
+.container3 {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container3 img {
+    width: 100%;
+    height: 50%;
+}
+
+
+/** About text **/
+
+.about_text {
+    text-align: right;
+    margin-top: -380px;
+    padding-left: 380px;
+    position:absolute;
+
+}
+
+
+.about_text h1 {
+    color: #e9ff00;
+    font-size: 56px;
+    font-weight: 600;
+    font-family: 'Hobeaux';
+    
+}
+
+.about_text h1:hover {
+    color: black;
+}
+
+
+
+/** About  button **/
+
+.about_btn {
+    margin-top: -20px;
+    
+}
+
+.about_btn button {
+    font-family: 'nunito';
+    font-size: 22px;
+    background-color: #FFFFFF;
+    border:3px solid black;
+    border-radius: 5px;
+    padding: 9px 24px;
+    color:black;
+    position: center;
+    cursor: pointer;
+   font-weight: bold;
+}
+
+.about_btn button:hover {
+    color:#20411D;
+   font-weight: bold;
+}
+
+
+/** Tacos **/
+
+h2 {
+    font-size: 40px;
+    text-align:  center;
+    padding-top: 30px;
+}
+
+.h2hover:hover {
+    color:#e27134;
+}
+
+
+#container {
+    background-color: white;
+    height: 300px;
+}
+
+.freetext {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Hobeaux';
+    text-align: center;
+}
+
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding-top: 100x;
+    padding-bottom: 50px;
+    background-color: white;
+
+}
+
+
+
+.item {
+    width:100%;
+   padding-top: 30px;
+   margin: 0 auto;
+}
+
+.img {width:300px;
+height: 300px;}
+
+
+#img1 {
+    width:300px;
+height: 300px;
+
+}
+
+#img2 {
+    width:300px;
+height: 300px;
+
+}
+
+#img3 {
+    width:300px;
+height: 300px;
+
+}
+
+.content {
+    text-align: center;
+    margin-top: -10px;
+}
+
+.content h4 {
+    font-family: 'Hobeaux';
+    text-align: center;
+    color: #20411D;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+p { 
+    font-family: 'Hobeaux';
+    text-align:center;
+    margin-bottom: 20px;
+
+}
+
+/** Tacos btn **/
+
+.btn {
+    font-family: 'nunito';
+    font-size: 16px;
+    background-color: #FFFFFF;
+    border:3px solid black;
+    border-radius: 5px;
+    padding: 9px 24px;
+    color:black;
+    position: center;
+    cursor: pointer;
+   font-weight: bold;
+ 
+ }
+
+ .btn:hover {
+    background-color: #20411D;
+    color:white;
+    font-weight: bold;
+ }
+
+
+/** Subscribe **/
+
+.signup {
+    font-weight: 600;
+    font-family: 'Hobeaux';
+    text-align: center;
+    margin-top: 15px;
+    font-size: 36px;
+}
+
+
+.btn_box {
+    text-align: center;
+
+}
+#btn2 {
+    font-family: 'nunito';
+    font-size: 22px;
+    background-color: #FFFFFF;
+    border:3px solid black;
+    border-radius: 5px;
+    padding: 9px 24px;
+    color:black;
+    position: center;
+    cursor: pointer;
+   font-weight: bold;
+    
+}
+
+#btn2:hover {
+    color:#20411D;
+    font-weight: bold;
+ }
+    
+
+
+ /** Footer **/
+
+ .footer {
+    text-align: center;
+    margin-top: 80px;
+}
+
+
+/** Taco page - Tacogallery **/
+
+.tacos {
+    color: black;
+    font-size: 56px;
+    font-weight: 600;
+    font-family: 'Hobeaux';
+    text-align: center;
+}
+
+.tacogallery {
+    background-color: white;
+    padding: 5px;
+    margin: 50px;
+    overflow: auto;
+    width: auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-gap: 50px;
+    justify-items: center;
+    align-items: center;
+}
+
+.galleryimage { 
+    border-style: solid;
+    border-width: 10px;
+    border-color: black;
+    padding: 10px;
+
+}
+
+.imagetitle {
+    font-family:'Hobeaux';
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.imageinfo {
+    font-family:'Hobeaux';
+    font-size: 20px;
+    text-align: center;
+}
+
+
+/** Contact page **/
+
+.contact_text {width: 100%;
+    position: relative;
+    padding-top: 18px;
+
+    }
+
+    
+    .contact_p {
+        font-family: 'Hobeaux', sans-serif;
+        color: #0C0C0C;
+        font-size: 16px;
+        text-align: center;
+    }
+    
+    .contact_box {
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        transform: absolute;
+        position: center;
+        
+    }
+    
+    form { width: 50%;
+        padding-left: 340px;
+        
+    }
+    
+    .input-field { 
+        width: 100%;
+        height: 26px;
+        margin-top: 18px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border: 1px solid #D6D6D6;
+        border-radius: 5px;
+        outline:none;
+    
+    }
+    
+    .textarea-field {
+        height:100px;
+        padding-top:20px;
+    }
+    
+    .btn_box {
+       margin-top:20px;
+       text-align: center;
+    }
+
+
+.btn2 {
+    font-family: 'nunito';
+    font-size: 18px;
+    background-color: #FFFFFF;
+    border:3px solid black;
+    border-radius: 5px;
+    padding: 9px 24px;
+    color:black;
+    position: center;
+    cursor: pointer;
+   font-weight: bold;
+ 
+ }
+
+ .btn2:hover {
+    background-color: #20411D;
+    color:white;
+    font-weight: bold;
+ }
+
+
+
+ 
