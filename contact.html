@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="description" content="Building a responsive navigation with the BitDev">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Responsive multipage</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<wrapper>
+
+    <!--Text endless promotion-->
+        <div class="promotion">
+            <div class="marquee">
+              <p>
+                Subscribe and get free shipping + 10% off Free shipping on orders over $50 Subscribe and get free shipping + 10% off Free shipping on orders over $50 Subscribe and get free shipping + 10% off Free shipping on orders over $50 Subscribe and get free shipping + 10% off Free shipping on orders over $50 
+              </p>
+              <p>
+                Subscribe and get free shipping + 10% off Free shipping on orders over $50 Subscribe and get free shipping + 10% off Free shipping on orders over $50 Subscribe and get free shipping + 10% off Free shipping on orders over $50 Subscribe and get free shipping + 10% off Free shipping on orders over $50
+              </p>
+            </div>
+          </div>
+
+    <!-- Logo -->
+
+    <div class="logo">
+    <a href="index.html">
+        <img alt=logo src="img/logo.png">
+    </a>
+    </div>
+    
+    <!--Hamburger menu-->
+
+    <nav class="navbar">
+        <span class="open-slide">
+            <a href="#" onclick="openSideMenu()">
+                <svg width="30" height="30">
+                    <path d="M0,5 30,5" stroke="#000" stroke-width="5"/>
+                    <path d="M0,14 30,14" stroke="#000" stroke-width="5"/>
+                    <path d="M0,23 30,23" stroke="#000" stroke-width="5"/>
+                </svg>
+            </a>
+            </span>
+        </nav>
+
+    <!--Navigation bar menu-->
+
+    <nav id="navbar-nav">
+        <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="tacos.html">TACOS</a></li>
+        <li><a href="drinks.html">DRINKS</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+    </nav>
+
+    <!--Slide menu-->
+    
+    <div id="side-menu" class="side-nav">
+        <a href="#" class="btn-close" onclick="closeSideMenu()">&times;</a>
+        <a href="#">HOME</a>
+        <a href="#">ABOUT</a>
+        <a href="#">TACOS</a>
+        <a href="#">DRINKS</a>
+        <a href="#">CONTACT</a>
+    </div>
+
+    <!--About-->
+<h2>Want to know more about BEST TACO CLUB ? </h2>
+<p>The Taco Bell brand in Canada, part of Yum! Brands, Inc., started in 1979 with one restaurant in Ontario.<br>
+
+    Today, it has grown to over 170 Canadian units in eight provinces, to become the leading Mexican-inspired<br> quick service chain in the country. We serve made-to-order and customizable tacos, burritos, and specialties<br> such as the exclusive Doritos® Locos Tacos, Fries Supreme and a lower calorie Fresco Menu. The company<br> encourages customers to “Live Más,” both through its food and various local community initiatives. The best club<br> has instant brand recognition as the world’s largest Mexican-inspired restaurant company serving 36 million<br> customers each week in over 7,000 restaurants across the globe.
+    
+    </p>
+
+<h2>TALK TACOS WITH US</h2>
+<p>Whether you’re looking for nutritional info or would like to get in touch you’ve come to the right place.</p>
+
+
+
+    <!--contact-->
+
+    <div class="contact_text">
+        <h2>
+            Feel free to contact us!
+        </h2>
+        <p class="contact_p">
+            Address : 210 Shalon street<br> 
+            Number : 456-123-567
+        </p>
+    </div>
+        <div class="contact_box">
+            <form>
+                <input type="text" class="input-field" placeholder="Your Name">
+                <input type="email" class="input-field" placeholder="Your Email">
+                <input type="text" class="input-field" placeholder="Subject">
+                <textarea type="text" class="input-field textarea-field" placeholder="What are you looking for?">
+                </textarea>
+                <div class="btn_box">
+                <button type="button" class="btn2">SEND MESSAGE </button>
+            </div>
+        </form>
+
+             <!--Footer-->
+    <p class="footer">© 2022 Best Taco Club </p>
+
+    <script>
+        
+                //opens the side menu
+                function openSideMenu(){
+                    document.getElementById('side-menu').style.width = '250px';
+                    document.getElementById('main').style.marginLeft = '250px';
+                }
+                //closes the side menu
+                 function closeSideMenu(){
+                    document.getElementById('side-menu').style.width = '0px';
+                    document.getElementById('main').style.marginLeft = '0px';
+                }
+
+
+    
+        
+        </script>
+
+
+        </body>
+        </html>
